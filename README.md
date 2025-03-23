@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Business Website Template
 
 This is a business website template for a company built using **React 18** (with **TypeScript 4**), **Material UI 5**, **Django 4**, and **Django REST Framework 3**.
@@ -195,3 +196,6 @@ To modify the two buttons in the Hero section, make changes in the ```frontend/s
 ## Copyright and License
 
 Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
+=======
+# business-website
+>>>>>>> b62f10570d143ed4919e53672e8bd1464ece7230
