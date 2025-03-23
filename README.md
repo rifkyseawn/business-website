@@ -1,52 +1,39 @@
-<<<<<<< HEAD
 # Business Website Template
 
-This is a business website template for a company built using **React 18** (with **TypeScript 4**), **Material UI 5**, **Django 4**, and **Django REST Framework 3**.
+This template is a fully functional business website built with **React 18** (using **TypeScript 4**), **Material UI 5**, **Django 4**, and **Django REST Framework 3**.
 
-### Dark mode:
+## Table of Contents
+- [Requirements](#requirements)
+- [Setup Instructions](#setup-instructions)
+- [Launch Application](#launch-application)
+- [Quality Assurance](#quality-assurance)
+- [Data Management](#data-management)
+- [Customization Guide](#customization-guide)
+- [License](#license)
 
-![plot](https://github.com/BobsProgrammingAcademy/business-website-template/blob/master/frontend/public/images/dark_theme.png?raw=true)
+## Requirements
 
-### Light mode:
+Essential components to install:
 
-![plot](https://github.com/BobsProgrammingAcademy/business-website-template/blob/master/frontend/public/images/light_theme.png?raw=true)
+1. [Python 3.8-3.11](https://www.python.org/downloads/)  
+   *Required for Django 4.2.4 - [Compatibility Guide](https://django.readthedocs.io/en/stable/faq/install.html)*
+2. [Node.js LTS](https://nodejs.org/en/)
+3. [VS Code](https://code.visualstudio.com/) (Recommended IDE)
 
-## Table of Contents 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running the application](#run-the-application)
-- [Running the tests](#run-the-tests)
-- [Adding data to the application](#add-data-to-the-application)
-- [Customizing the application](#customize-the-application)
-- [Copyright and License](#copyright-and-license)
+## Setup Instructions
 
-## Prerequisites
+### Backend Configuration
 
-Install the following prerequisites:
+#### 1. Initialize Virtual Environment
 
-1. [Python 3.8-3.11](https://www.python.org/downloads/)
-<br> This project uses **Django v4.2.4**. For Django to work, you must install a correct version of Python on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
-2. [Node.js](https://nodejs.org/en/)
-3. [Visual Studio Code](https://code.visualstudio.com/download)
-
-## Installation
-
-### Backend
-
-#### 1. Create a virtual environment
-
-From the **root** directory, run:
+Open your terminal, navigate to the backend folder, and run:
 
 ```bash
 cd backend
-```
-```bash
 python -m venv venv
 ```
 
-#### 2. Activate the virtual environment
-
-From the **backend** directory, run:
+#### 2. Activate Environment
 
 On macOS:
 
@@ -60,142 +47,67 @@ On Windows:
 venv\scripts\activate
 ```
 
-#### 3. Install required backend dependencies
+#### 3. Install Dependencies
 
-From the **backend** directory, run:
+Within the backend directory, install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 4. Run migrations
+#### 4. Database Setup
 
-From the **backend** directory, run:
+Execute the following commands to apply migrations:
 
 ```bash
 python manage.py makemigrations
-```
-```bash
 python manage.py migrate
 ```
 
-#### 5. Create an admin user to access the Django Admin interface
+#### 5. Admin Credentials
 
-From the **backend** directory, run:
+To access the Django admin panel, create an admin user:
 
 ```bash
 python manage.py createsuperuser
 ```
 
-When prompted, enter a username, email, and password.
+Provide a username, email, and password when prompted.
 
-### Frontend
+### Frontend Configuration
 
-#### 1. Install required frontend dependencies
+#### 1. Install Packages
 
-From the **root** directory, run:
+From the project root, navigate to the frontend folder and install the dependencies:
 
 ```bash
 cd frontend
-```
-```bash
 npm install
 ```
 
-## Run the application
+## Launch Application
 
-To run the application, you need to have both the backend and the frontend up and running.
+To run the full application, you need both the backend and frontend servers running concurrently.
 
-### 1. Run backend
+### 1. Start Backend Server
 
-From the **backend** directory, run:
+From the backend folder, run:
 
 ```bash
 python manage.py runserver
 ```
 
-### 2. Run frontend
+### 2. Launch Frontend
 
-From the **frontend** directory, run:
+From the frontend folder, run:
 
 ```bash
 npm start
 ```
 
-## View the application
+Once both servers are running, open your browser and navigate to http://localhost:3000/ to view the application.
 
-Go to http://localhost:3000/ to view the application.
+## Data Management
 
-## Run the tests
-
-### 1. Run the backend tests
-
-From the **backend** directory, run:
-
-```bash
-python manage.py test --pattern="tests.py"
-
-```
-
-### 2. Run the frontend tests
-
-From the **frontend** directory, run:
-
-```bash
-npm run test
-```
-
-## Add data to the application
-
-Add data through Django Admin.
-
-Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
-
-## Customize the application
-
-This section describes how to customize the application. 
-
-### Changing Section Titles and Subtitles 
-
-#### 1. Products
-
-To modify the title and subtitle of the **Products** section, make changes in the ```frontend/src/components/Products.tsx``` file.
-
-#### 2. Services
-
-To modify the title and subtitle of the **Services** section, make changes in the ```frontend/src/components/Services.tsx``` file.
-
-#### 3. Pricing
-
-To modify the title and subtitle of the **Pricing** section, make changes in the ```frontend/src/components/Pricing.tsx``` file.
-
-#### 4. About
-
-To modify the title and subtitle of the **About** section, make changes in the ```frontend/src/components/About.tsx``` file.
-
-#### 5. Contact
-
-To modify the title and subtitle of the **Contact** section, make changes in the ```frontend/src/components/Contact.tsx``` file.
-
-### Changing Colors
-
-To modify the colors in the application, make changes in the ```frontend/src/theme/palette.ts``` file.
-
-### Changing Fonts
-
-To modify the fonts in the application, first, add a new font to the ```frontend/public/index.html``` file, and then make changes in the ```frontend/src/theme/theme.ts``` file.
-
-### Changing Logo
-
-To modify the logo in the application, make changes in the ```frontend/src/layout/Header.tsx``` and ```frontend/src/layout/Sidebar.tsx``` files.
-
-### Changing Buttons in the Hero Section
-
-To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.tsx``` file.
-
-## Copyright and License
-
-Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
-=======
-# business-website
->>>>>>> b62f10570d143ed4919e53672e8bd1464ece7230
+You can add data to the application through Django Admin.
+Open your browser and visit http://127.0.0.1:8000/admin to log in with your admin credentials and manage your data.
