@@ -17,7 +17,7 @@
 ### Dark mode:
 ![Image](https://github.com/user-attachments/assets/52595a0f-8100-4c20-995e-a44ee1dd9b86)
 
-### Responsive:
+### Responsive mode:
 
 ![Image](https://github.com/user-attachments/assets/a213d7d0-2fbe-426c-b557-b2fcacadc722)
 
